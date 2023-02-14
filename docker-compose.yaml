@@ -1,0 +1,15 @@
+version: "3"
+services:
+  react:
+    build:
+      dockerfile: Dockerfile
+      context: ./f
+    ports:
+      - 80:80
+
+  data:
+    build:
+      dockerfile: Dockerfile
+      context: ./b
+    ports:
+      - 3002:3002
